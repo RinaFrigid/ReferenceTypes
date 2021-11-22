@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Task1
 {
@@ -6,16 +7,21 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            Figure line = new Line(5, 3, 10, 6);
-            line.Draw();
-            Figure cercle = new Circle(1, 1, 10);
-            cercle.Draw();
-            Figure rectangle = new Rectangle(5, 3, 10, 6);
-            rectangle.Draw();
-            Figure round = new Round(1, 1, 5, "White");
-            round.Draw();
-            Figure ring = new Ring(1, 1, 5, 10);
-            ring.Draw();
+            Figure line = new Line(1, 1, 8, 10);
+            Figure cercle = new Circle(1, 2, 5);
+            Figure rectangle = new Rectangle(1, 0, 5, 12);
+            Figure round = new Round(1, 5, 9, "White");
+            Figure ring = new Ring(3, 5, 7, 11);
+            List<Figure> figures = new();
+            figures.Add(line);
+            figures.Add(cercle);
+            figures.Add(rectangle);
+            figures.Add(round);
+            figures.Add(ring);
+            foreach (var figure in figures)
+            {
+                Console.WriteLine(figure.Draw());        
+            }
         }
     }
 }

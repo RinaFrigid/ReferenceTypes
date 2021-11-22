@@ -13,9 +13,9 @@ namespace Task1
             Radius2 = radius2;
         }
         public int Radius2 { get; set; }
-        public override void Draw()
+        public override string Draw()
         {
-            Console.WriteLine("Обьект кольцо:\nЦентр кольца ({0};{1})\nширина кольца: {2}\nРадиус внутренней окружности: {3}\nРадиус внешней окружности: {4}\n", X, Y, Math.Abs(Radius-Radius2), Math.Min(Radius,Radius2), Math.Max(Radius,Radius2));
+            return string.Format("Обьект кольцо:\nЦентр кольца ({0};{1})\nширина кольца: {2}\nРадиус внутренней окружности: {3}\nРадиус внешней окружности: {4}\n", X, Y, Math.Abs(Radius-Radius2), Math.Min(Radius,Radius2), Math.Max(Radius,Radius2));
         }
     }
 }

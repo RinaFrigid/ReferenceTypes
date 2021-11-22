@@ -13,9 +13,9 @@ namespace Task1
             Radius = Math.Abs(radius);
         }
         public int Radius { get; set; }
-        public override void Draw()
+        public override string Draw()
         {
-            Console.WriteLine("Обьект окружность:\nЦентр окружности ({0};{1})\nРадиус: {2}\n", X, Y, Radius);
+            return string.Format("Обьект окружность:\nЦентр окружности ({0};{1})\nРадиус: {2}\n", X, Y, Radius);
         }
     }
 }

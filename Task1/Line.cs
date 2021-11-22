@@ -15,9 +15,9 @@ namespace Task1
         }
         public int EndX { get; set; }
         public int EndY { get; set; }
-        public override void Draw()
+        public override string Draw()
         {
-            Console.WriteLine("Обьект линия:\nНачало ({0};{1})\nКонец ({2};{3})\n", X, Y, EndX, EndY);
+            return string.Format("Обьект линия:\nНачало ({0};{1})\nКонец ({2};{3})\n", X, Y, EndX, EndY);
         }
     }
 }

@@ -12,9 +12,9 @@ namespace Task1
         {
 
         }
-        public override void Draw()
+        public override string Draw()
         {
-            Console.WriteLine("Обьект прямоугольник:\nдлина: {0}\nширина: {1}\n", Math.Abs(EndX - X), Math.Abs(Y - EndY));
+            return string.Format("Обьект прямоугольник:\nдлина: {0}\nширина: {1}\n", Math.Abs(EndX - X), Math.Abs(Y - EndY));
         }
     }
 }

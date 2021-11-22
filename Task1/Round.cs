@@ -13,9 +13,9 @@ namespace Task1
             Color = color;
         }
         public string Color { get; set; }
-        public override void Draw()
+        public override string Draw()
         {
-            Console.WriteLine("Обьект круг:\nЦентр круга ({0};{1})\nРадиус: {2}\nЦвет: {3}\n", X, Y, Radius, Color);
+            return string.Format("Обьект круг:\nЦентр круга ({0};{1})\nРадиус: {2}\nЦвет: {3}\n", X, Y, Radius, Color);
         }
     }
 }

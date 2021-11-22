@@ -15,6 +15,6 @@ namespace Task1
         }
         public int X { get; set; }
         public int Y { get; set; }
-        public abstract void Draw();
+        public abstract string Draw();
     }
 }
